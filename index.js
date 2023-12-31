@@ -36,6 +36,7 @@ alert(result);
 
 //IIFE(Immediately Invoke Functional Expression)--> scripts to add dummy data inside application during first run
 
-(function () {
+(function (a, b) {
+  console.log(a + b);
   console.log("Hello I'm IIFE");
-})();
+})(1, 2);
