@@ -7,7 +7,7 @@ const pagination = (page = 1, size = 5) => {
 
 pagination();
 
-// inline function--> assigning nameless/anonymous function to a variable which can be used repeatedly wherever we want
+// inline function --> assigning nameless/anonymous function to a variable which can be used repeatedly wherever we want
 //reusability.
 const footer = function () {
   console.log("Anonymous");
@@ -16,3 +16,11 @@ const footer = function () {
 footer();
 footer();
 footer();
+
+//Closure function --> function that return harcorded variable stored inside the function.
+
+const secret = () => {
+  const password = "password";
+  return password;
+};
+console.log(secret());
