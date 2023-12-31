@@ -24,3 +24,18 @@ const secret = () => {
   return password;
 };
 console.log(secret());
+
+//IMPLICIT FUNCTION
+const a = parseInt(prompt("Enter the first integer"));
+const b = parseInt(prompt("Enter the second integer"));
+
+const addit = (x, y) => x + y;
+const result = addit(a, b);
+
+alert(result);
+
+//IIFE(Immediately Invoke Functional Expression)--> scripts to add dummy data inside application during first run
+
+(function () {
+  console.log("Hello I'm IIFE");
+})();
